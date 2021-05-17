@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/vue@next"></script>
+   </head>
+   <body>
+      <script src="algorithm.js"></script>
+      <div>
+        <div class="container">
+          <h1 class="display-2">Algorithm Board</h1>
+          <p class="lead">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+          </p>
+          <hr>
+          <div class="row">
+              <div class="col addpadding">
+                <!-- Fib Code  -->
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fibModal">
+                            Code
+                          </button>
+                        </div>
+                        <div class="col-sm-9">
+                          <h5 class="card-title">Fibonacci Series</h5>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="card-text">
+                          <script>
+                            fibSequence(8);
+                          </script>
+                          <!-- Modal -->
+                          <div class="modal fade" id="fibModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Code Example</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <script>
+                                    document.write(fibonacci.toString());
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col addpadding">
+                <!-- Fizz Buzz Code -->
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fizzModal">
+                            Code
+                          </button>
+                        </div>
+                        <div class="col-sm-9">
+                          <h5 class="card-title">FizzBuzz Tests</h5>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="card-text">
+                          <script>
+                            document.write("Test 3: ");
+                            fizzBuzz(3);
+                            document.write("Test 5: ");
+                            fizzBuzz(5);
+                            document.write("Test 15: ");
+                            fizzBuzz(15);
+                          </script>
+                          <!-- Modal -->
+                          <div class="modal fade" id="fizzModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Code Example</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <script>
+                                    document.write(fizzBuzz.toString());
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col addpadding">
+                <!-- Fib Code  -->
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#revModal">
+                            Code
+                          </button>
+                        </div>
+                        <div class="col-sm-9">
+                          <h5 class="card-title">Reverse Words</h5>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="card-text">
+                          <script>
+                            document.write('Example: <br> Coding JavaScript is fun <br>');
+                            document.write('Answer: <br>');
+                            document.write(reverseWords(' Coding JavaScript is fun'));
+                            document.write('<br>');
+                          </script>
+                          <!-- Modal -->
+                          <div class="modal fade" id="revModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Code Example</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <script>
+                                    document.write(reverseWords.toString());
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col addpadding">
+                <!-- Nothing Yet ...  -->
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sortModal">
+                            Code
+                          </button>
+                        </div>
+                        <div class="col-sm-9">
+                          <h5 class="card-title">Quick Sort</h5>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="card-text">
+                          <script>
+                            document.write('Unsorted: <br>');
+                            document.write("8,5,13,54,23 <br>");
+                            document.write('Sorted: <br>');
+                            document.write(sorted);
+                            document.write('<br>');
+                          </script>
+                          <!-- Modal -->
+                          <div class="modal fade" id="sortModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Code Example</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <script>
+                                    document.write(sort.toString());
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+   </body>
+</html>
